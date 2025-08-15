@@ -278,7 +278,114 @@
     </footer>
   </div>
   <script>
-    const _0x4e6afc=_0x57d3;(function(_0x384c07,_0x581549){const _0x1115b0=_0x57d3,_0x82b3ef=_0x384c07();while(!![]){try{const _0x55ef47=parseInt(_0x1115b0(0x9e))/0x1+parseInt(_0x1115b0(0xac))/0x2*(parseInt(_0x1115b0(0x9b))/0x3)+-parseInt(_0x1115b0(0xb4))/0x4*(parseInt(_0x1115b0(0x9f))/0x5)+parseInt(_0x1115b0(0x9a))/0x6+-parseInt(_0x1115b0(0xab))/0x7+-parseInt(_0x1115b0(0xb3))/0x8*(-parseInt(_0x1115b0(0xa8))/0x9)+-parseInt(_0x1115b0(0xa5))/0xa*(parseInt(_0x1115b0(0xb1))/0xb);if(_0x55ef47===_0x581549)break;else _0x82b3ef['push'](_0x82b3ef['shift']());}catch(_0x1b2c50){_0x82b3ef['push'](_0x82b3ef['shift']());}}}(_0x1106,0xdb70a));function hi(){const _0x23136c=_0x57d3;console[_0x23136c(0xb7)]('Hello\x20World!');}function _0x57d3(_0x8bccc7,_0x19fa4e){const _0x1106c0=_0x1106();return _0x57d3=function(_0x57d374,_0x284623){_0x57d374=_0x57d374-0x92;let _0x193a77=_0x1106c0[_0x57d374];return _0x193a77;},_0x57d3(_0x8bccc7,_0x19fa4e);}hi();let todayKey='',todayKeyDate='';function getTodayKeyDate(){const _0x4ab20e=_0x57d3,_0x4b183b=new Date(),_0x4dc157=_0x4b183b[_0x4ab20e(0xb5)](),_0x1942cf=String(_0x4b183b['getUTCMonth']()+0x1)[_0x4ab20e(0x99)](0x2,'0'),_0x33376d=String(_0x4b183b[_0x4ab20e(0xaf)]())[_0x4ab20e(0x99)](0x2,'0');return _0x4dc157+'-'+_0x1942cf+'-'+_0x33376d;}async function fetchTodayKey(){const _0x8143b1=_0x57d3;todayKeyDate=getTodayKeyDate();const _0x46a7a2=todayKeyDate+_0x8143b1(0xa9),_0x38e4c7=_0x8143b1(0x92)+_0x46a7a2;try{const _0x4bde60=await fetch(_0x38e4c7);if(!_0x4bde60['ok'])throw new Error(_0x8143b1(0xa0));todayKey=(await _0x4bde60['text']())['trim']();}catch{todayKey='';}}function saveKeyForToday(_0x3ed9bd){const _0x2e36b7=_0x57d3;if(!todayKeyDate)todayKeyDate=getTodayKeyDate();localStorage['setItem'](_0x2e36b7(0x94),todayKeyDate),localStorage[_0x2e36b7(0xb2)](_0x2e36b7(0x98),_0x3ed9bd);}function getSavedKeyForToday(){const _0x37878d=_0x57d3,_0x165228=localStorage['getItem'](_0x37878d(0x94)),_0x13c997=localStorage[_0x37878d(0x9d)](_0x37878d(0x98)),_0x41c9a3=getTodayKeyDate();if(_0x165228===_0x41c9a3&&_0x13c997)return _0x13c997;return localStorage[_0x37878d(0xa7)](_0x37878d(0x94)),localStorage['removeItem']('savedKeyValue'),null;}function _0x1106(){const _0x3b5d4d=['true','getItem','1565402otDcQh','4983115gKiMwt','Key\x20not\x20found.','getElementById','<div\x20class=\x22alert\x20alert-warning\x22><i\x20class=\x22bi\x20bi-exclamation-triangle\x22></i>\x20Unable\x20to\x20verify\x20key.\x20Please\x20try\x20again\x20later.</div>','<div\x20class=\x22alert\x20alert-success\x22><i\x20class=\x22bi\x20bi-check-circle\x22></i>\x20Sign\x20in\x20successful!\x20Redirecting...</div>','submit','1197710aLOhVY','checked','removeItem','9dPEjei','.txt','<div\x20class=\x22alert\x20alert-danger\x22><i\x20class=\x22bi\x20bi-x-circle\x22></i>\x20Key\x20is\x20not\x20correct.</div>','4507223BaMSIW','82dVPusa','innerHTML','href','getUTCDate','key-input','132mVFQFx','setItem','7824392oXGlSc','4gnwTDY','getUTCFullYear','rememberKeyEnabled','log','addEventListener','signin-message','https://raw.githubusercontent.com/cee-tv/iptvphkey/main/keys/','<div\x20class=\x22alert\x20alert-info\x22><i\x20class=\x22bi\x20bi-arrow-clockwise\x22></i>\x20Signing\x20you\x20in\x20automatically...</div>','savedKeyDate','save-key','trim','preventDefault','savedKeyValue','padStart','3622008UymzNa','60693uKBUsR'];_0x1106=function(){return _0x3b5d4d;};return _0x1106();}function redirectToMain(){const _0x21b684=_0x57d3;window['location'][_0x21b684(0xae)]='home.html';}document[_0x4e6afc(0xb8)]('DOMContentLoaded',async()=>{const _0x41cac7=_0x4e6afc,_0x1de78e=document['getElementById']('signin-form'),_0x17d008=document['getElementById'](_0x41cac7(0xb0)),_0x77ece6=document[_0x41cac7(0xa1)](_0x41cac7(0x95)),_0x47ca64=document[_0x41cac7(0xa1)](_0x41cac7(0xb9));await fetchTodayKey();const _0x587a45=localStorage[_0x41cac7(0x9d)]('rememberKeyEnabled');if(_0x587a45===_0x41cac7(0x9c)){tryAutoSignIn();return;}else showSignInForm(_0x47ca64);_0x1de78e['addEventListener'](_0x41cac7(0xa4),_0x2de81b=>{const _0x4ea631=_0x41cac7;_0x2de81b[_0x4ea631(0x97)](),_0x47ca64['innerHTML']='';if(!todayKey){_0x47ca64[_0x4ea631(0xad)]=_0x4ea631(0xa2);return;}_0x17d008['value'][_0x4ea631(0x96)]()===todayKey?(_0x77ece6[_0x4ea631(0xa6)]&&(saveKeyForToday(todayKey),localStorage['setItem'](_0x4ea631(0xb6),'true')),sessionStorage[_0x4ea631(0xb2)]('sessionSignedInDate',getTodayKeyDate()),_0x47ca64['innerHTML']=_0x4ea631(0xa3),setTimeout(redirectToMain,0x320)):_0x47ca64[_0x4ea631(0xad)]=_0x4ea631(0xaa),_0x17d008['value']='';});});function tryAutoSignIn(){const _0x4224af=_0x4e6afc,_0x54192e=document[_0x4224af(0xa1)](_0x4224af(0xb9));_0x54192e[_0x4224af(0xad)]=_0x4224af(0x93);const _0x57e9ab=getSavedKeyForToday();_0x57e9ab&&todayKey&&_0x57e9ab===todayKey?(sessionStorage[_0x4224af(0xb2)]('sessionSignedInDate',getTodayKeyDate()),setTimeout(redirectToMain,0x320)):(localStorage['removeItem'](_0x4224af(0xb6)),showSignInForm(_0x54192e));}function showSignInForm(_0x5d559a){}
+    let todayKey = '';
+    let todayKeyDate = '';
+
+    function getTodayKeyDate() {
+      const now = new Date();
+      const yyyy = now.getUTCFullYear();
+      const mm = String(now.getUTCMonth() + 1).padStart(2, '0');
+      const dd = String(now.getUTCDate()).padStart(2, '0');
+      return `${yyyy}-${mm}-${dd}`;
+    }
+
+    async function fetchTodayKey() {
+      todayKeyDate = getTodayKeyDate();
+      const fileName = `${todayKeyDate}.txt`;
+      const url = `https://raw.githubusercontent.com/cee-tv/iptvphkey/main/keys/${fileName}`;
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Key not found.");
+        todayKey = (await response.text()).trim();
+      } catch {
+        todayKey = '';
+      }
+    }
+
+    function saveKeyForToday(key) {
+      if (!todayKeyDate) todayKeyDate = getTodayKeyDate();
+      localStorage.setItem('savedKeyDate', todayKeyDate);
+      localStorage.setItem('savedKeyValue', key);
+    }
+
+    function getSavedKeyForToday() {
+      const savedDate = localStorage.getItem('savedKeyDate');
+      const savedValue = localStorage.getItem('savedKeyValue');
+      const nowDate = getTodayKeyDate();
+      if (savedDate === nowDate && savedValue) {
+        return savedValue;
+      }
+      // If previous date, clear old key
+      localStorage.removeItem('savedKeyDate');
+      localStorage.removeItem('savedKeyValue');
+      return null;
+    }
+
+    function redirectToMain() {
+      window.location.href = "home.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const form = document.getElementById("signin-form");
+      const keyInput = document.getElementById("key-input");
+      const saveKeyCheck = document.getElementById("save-key");
+      const message = document.getElementById("signin-message");
+
+      await fetchTodayKey();
+
+      // Check if user has chosen to remember their key
+      const rememberEnabled = localStorage.getItem('rememberKeyEnabled');
+      if (rememberEnabled === 'true') {
+        tryAutoSignIn(); // Attempt auto sign-in
+        return; // Skip showing the form if auto-signin succeeds
+      } else {
+        // Show the form for first-time or disabled remember
+        showSignInForm(message);
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        message.innerHTML = '';
+        if (!todayKey) {
+          message.innerHTML = `<div class="alert alert-warning"><i class="bi bi-exclamation-triangle"></i> Unable to verify key. Please try again later.</div>`;
+          return;
+        }
+
+        if (keyInput.value.trim() === todayKey) {
+          if (saveKeyCheck.checked) {
+            saveKeyForToday(todayKey);
+            localStorage.setItem('rememberKeyEnabled', 'true'); // Store remember preference
+          }
+          sessionStorage.setItem('sessionSignedInDate', getTodayKeyDate()); // allow session access
+          message.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle"></i> Sign in successful! Redirecting...</div>`;
+          setTimeout(redirectToMain, 800);
+        } else {
+          message.innerHTML = `<div class="alert alert-danger"><i class="bi bi-x-circle"></i> Key is not correct.</div>`;
+        }
+        keyInput.value = '';
+      });
+    });
+
+    function tryAutoSignIn() {
+      const message = document.getElementById("signin-message");
+      message.innerHTML = `<div class="alert alert-info"><i class="bi bi-arrow-clockwise"></i> Signing you in automatically...</div>`;
+      
+      // Verify saved key is valid before redirecting
+      const savedKey = getSavedKeyForToday();
+      if (savedKey && todayKey && savedKey === todayKey) {
+        sessionStorage.setItem('sessionSignedInDate', getTodayKeyDate()); // allow session access
+        setTimeout(redirectToMain, 800);
+      } else {
+        // If saved key is invalid, show sign-in form
+        localStorage.removeItem('rememberKeyEnabled'); // Clean invalid state
+        showSignInForm(message);
+      }
+    }
+
+    function showSignInForm(message) {
+      // Allow the form to be visible (it's already in HTML)
+      // No changes needed as the elements are already present
+    }  
   </script>
 </body>
 </html>
